@@ -7,7 +7,6 @@ def total_task():
         task_input = input(f"Enter Task {i}: ")
         task_list.append(task_input)
         
-    # print(task_list)
     while(True):
         header=['S.No.','Operation']
         data=[
@@ -44,11 +43,11 @@ def total_task():
                 l=[]
                 newdata=[]
                 for work in range(0,len(task_list)):
-                    # print(f"{work+1}. | {task_list[work]}")
+                  
                     l=[f"{work+1}", f"{task_list[work]}"]
                     newdata.append(l)
-                    l=[]2
-            print(tabulate(newdata,headers=newheader,tablefmt="fancy_grid"))
+                    l=[]
+            print(tabulate(newdata, headers=newheader, tablefmt="fancy_grid"))
             print("="*20)
         elif choice == 5:
             print("\nExit Successfully....")
